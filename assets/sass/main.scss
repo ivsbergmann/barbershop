@@ -1,0 +1,12 @@
+@import "vendors/bootstrap-4.3.1/scss/bootstrap.scss";
+
+@import "abstracts/variables";
+
+@import "abstracts/mixins";
+@import "base/typography";
+
+@import "layout/nav", "layout/main", "layout/section", "layout/footer";
+
+@import "components/buttons";
+@import "components/pagination";
+

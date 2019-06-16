@@ -1,0 +1,20 @@
+button {
+    border-radius: 30px;
+    background-color: $nickel;
+    color:$white;
+    height: 50px;
+    margin-top: 2rem;
+ 
+  
+    
+    
+    &:hover{
+        background-color: $light-gray;
+        border-color: $light-gray;
+    }
+    &:focus{
+        border-color: $platinum;
+        background-color: $nickel;
+    }
+}
+

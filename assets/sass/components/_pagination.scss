@@ -1,0 +1,31 @@
+.pagination-section {
+    background-color: $platinum;
+    padding: 2rem;
+  }
+  
+.pagination {
+    .page-item {
+      &.active {
+        .page-link {
+          background-color: $nickel;
+          border-color: $platinum;
+        }
+      }
+      a {
+        color: $nickel;
+      }
+      &:first-child {
+        a {
+          border-radius: 50px 0 0 50px;
+          color: $nickel;
+        }
+      }
+      &:nth-last-child(1) {
+        a {
+          border-radius: 0 50px 50px 0;
+          color: $eerie-black;
+        }
+      }
+    }
+  }
+  

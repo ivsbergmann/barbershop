@@ -1,0 +1,105 @@
+/*aqui definimos estilos para la clase article*/
+.article {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  &__title {
+    color: $nickel;
+    font-family: $playfair;
+    font-weight: $regular;
+    padding-bottom: 3rem;
+  }
+  &__btn {
+    &--small {
+      width: $btn-small;
+    }
+    &--medium {
+      width: $btn-medium;
+    }
+  }
+  p {
+    font-family: $roboto;
+    font-weight: $light;
+    line-height: 2.5rem;
+    color:$nickel;
+  }
+  p:nth-child(5) {
+    span {
+      color: $spanish-pink;
+    }
+  }
+}
+
+
+.author {
+  display: inline-block;
+  text-align: center;
+  border-top: 2px solid $platinum;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__info {
+    padding-top: 2rem;
+    
+  }
+
+  &__img {
+    //margin-left: 9rem;
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  &__title {
+    text-align: left;
+    @include font-bold-italic;
+  }
+
+  &__link {
+    color: $spanish-pink;
+    text-align: left;
+    display: block;
+    &:hover {
+      color: $raisin-black;
+    }
+    &:active {
+      color: $platinum;
+    }
+  }
+
+  &__content {
+    padding: 1.8rem 2.5rem;
+    color: $nickel;
+    @include roboto-regular;
+    line-height: 2rem;
+    text-align:justify;
+  }
+}
+
+@media (max-width:375px){
+  .article{
+    &__btn {
+      &--small {
+        width: $btn-small-mbl;
+      }
+      &--medium {
+        width: $btn-medium-mbl;
+      }
+    }
+  }
+  .author{
+    &__title{
+      justify-content: center;
+      display: flex;
+    }
+    &__link{
+      justify-content: center;
+      display: flex;
+    }
+  }
+}
+
+.container-fluid{
+  padding-left: 0;
+}
