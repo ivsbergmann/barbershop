@@ -1,0 +1,14 @@
+@mixin font-bold-italic {
+    font-family: $playfair;
+    font-style: $italic;
+    font-weight: $extra-bold;
+}
+@mixin roboto-light{
+    font-family:$roboto;
+    font-weight: $light;
+}
+@mixin roboto-regular{
+    font-family:$roboto;
+    font-weight: $regular;
+    font-size:$small;
+}

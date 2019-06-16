@@ -1,0 +1,30 @@
+.navbar {
+  background-color: $eerie-black;
+  padding-right: 6rem;
+  padding-left: 6rem;
+}
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      color: $white;
+    }
+  }
+  .nav-item:nth-child(3) {
+    .nav-link {
+      color: $ruddy-pink;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    padding-right: 1rem ;
+    padding-left: 1rem ;
+    &-brand {
+      margin-right: 0;
+    }
+    &-toggler {
+      margin-top: 0;
+    }
+  }
+}
